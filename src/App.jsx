@@ -1,11 +1,20 @@
-import "./App.css";
+import React from "react";
+import Board from "./components/Board";
 
-function App() {
+const App = () => {
   return (
-    <>
-      <h1 className="text-5xl">Hello Developers</h1>
-    </>
+    <div className="flex h-screen items-center justify-center gap-10">
+      {/* board */}
+      <div>
+        <Board />
+      </div>
+
+      {/* history */}
+      <div>
+        <h1>Let's Start the Game</h1>
+      </div>
+    </div>
   );
-}
+};
 
 export default App;
